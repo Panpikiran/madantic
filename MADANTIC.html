@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconn$ect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Salsa&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      .div1 {
+        display: flex;
+        height: 100vh;
+        margin-top: -19%;
+      }
+      .ankit {
+        overflow: hidden;
+        display: flex;
+        padding: 40px;
+        margin: auto;
+      }
+      .ankit li {
+        list-style: none;
+        transition: all 3s;
+        letter-spacing: 12px;
+        text-transform: uppercase;
+        position: relative;
+        font-size: 50px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        text-align: center;
+        /* background: url(https://cdn.pixabay.com/photo/2024/01/07/00/36/woman-8492233_1280.jpg); */
+        /* background: url(https://www.solidbackgrounds.com/images/1920x1080/1920x1080-aqua-solid-color-background.jpg); */
+        background-attachment: fixed;
+        background: url(https://media.istockphoto.com/id/1400136454/photo/wood-plank-panel-texture-outdated-mahogany-table-background.jpg?s=1024x1024&w=is&k=20&c=CQxAcnMEU8tbDPo9tfQPWYzXmF9drXZWOaQHNSyCWhc=);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .ankit:before {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+      .ankit:hover li {
+        transform: rotate(55deg) translate(-300px);
+        opacity: 0;
+        filter: blur(70px);
+      }
+      nav ul a:hover {
+        color: chartreuse;
+        background-color: red;
+        text-decoration: underline;
+        transition: all 2s ease-in-out;
+      }
+      nav ul li a:active {
+        transition: all 2s ease-in-out;
+        color: white;
+      }
+      nav ul li #tap1:hover {
+        color: chartreuse;
+        transition: all 2s ease-in-out;
+        text-decoration: underline;
+      }
+      nav ul li #tap2:hover {
+        transition: all 2s ease-in-out;
+        color: chartreuse;
+        text-decoration: underline;
+      }
+      nav ul li #tap3:hover {
+        color: chartreuse;
+        transition: all 2s ease-in-out;
+        text-decoration: underline;
+      }
+      nav ul li #tap4c:hover {
+        color: chartreuse;
+        transition: all 2s ease-in-out;
+        text-decoration: underline;
+      }
+      li:nth-child(1) {
+        transition-delay: 0;
+      }
+      li:nth-child(2) {
+        transition-delay: 0.3s;
+      }
+      li:nth-child(3) {
+        transition-delay: 0.6s;
+      }
+      li:nth-child(4) {
+        transition-delay: 0.9s;
+      }
+      li:nth-child(5) {
+        transition-delay: 0.12s;
+      }
+      li:nth-child(6) {
+        transition-delay: 0.15s;
+      }
+      li:nth-child(7) {
+        transition-delay: 0.18s;
+      }
+      li:nth-child(8) {
+        transition-delay: 0.21s;
+      }
+      li:nth-child(9) {
+        transition-delay: 0.24s;
+      }
+      li:nth-child(10) {
+        transition-delay: 0.27s;
+      }
+      li:nth-child(11) {
+        transition-delay: 0.3s;
+      }
+      li:nth-child(12) {
+        transition-delay: 0.33s;
+      }
+      li:nth-child(13) {
+        transition-delay: 0.36s;
+      }
+      li:nth-child(14) {
+        transition-delay: 0.39s;
+      }
+      li:nth-child(15) {
+        transition-delay: 0.42s;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        margin-left: 3%;
+        text-transform: capitalize;
+      }
+      nav ul li {
+        display: inline;
+      }
+      nav {
+        background-color: orangered;
+        height: 30px;
+        width: 1410px;
+        position: fixed;
+        margin-left: -5%;
+        margin-top: -29.6%;
+        padding-top: 1.5%;
+        z-index: 3;
+      }
+      .ten {
+        margin-top: -0.6%;
+        margin-left: 10px;
+        font-variant: small-caps;
+      }
+      #tap1 {
+        color: white;
+        margin-left: 6%;
+        font-size: 25px;
+      }
+
+      #tap2 {
+        color: white;
+        margin-left: 3%;
+        font-size: 25px;
+      }
+      #tap3 {
+        color: white;
+        margin-left: 3%;
+        font-size: 25px;
+      }
+      #tap4 {
+        color: white;
+        margin-left: 3%;
+        font-size: 25px;
+      }
+      .team10 {
+        width: 1350px;
+        height: 50px;
+        margin-top: 9%;
+        margin-left: -8px;
+        background-color: orangered;
+      }
+      .copy {
+        margin-left: 2%;
+        color: white;
+        margin-top: 0.5%;
+        font-weight: 100;
+        position: absolute;
+      }
+      .copy1 {
+        color: white;
+        margin-left: 5%;
+        margin-top: 1%;
+        font-weight: 100;
+        position: absolute;
+      }
+      .copy2 {
+        margin-left: 24%;
+        margin-top: 1%;
+        color: white;
+        position: absolute;
+        font-weight: 100;
+      }
+      .copy3 {
+        font-weight: 100;
+        margin-left: 34%;
+        margin-top: 1%;
+        color: white;
+        position: absolute;
+      }
+      #copy4 {
+        margin-left: 87%;
+        font-size: 25px;
+        position: absolute;
+        margin-top: 0.9%;
+        color: white;
+      }
+      #copy5 {
+        margin-left: 91%;
+        font-size: 25px;
+        position: absolute;
+        margin-top: 0.9%;
+        color: white;
+      }
+      #copy6 {
+        margin-left: 95%;
+        font-size: 25px;
+        position: absolute;
+        margin-top: 0.9%;
+        color: white;
+      }
+      .button {
+        width: 160px;
+        height: 50px;
+        margin-top: -7%;
+        margin-left: 45%;
+        color: white;
+        background-color: orangered;
+        font-size: 20px;
+        position: absolute;
+      }
+      .img {
+        width: 300px;
+        height: 300px;
+        margin-left: 7.5%;
+        margin-top: 3%;
+        border-radius: 10%;
+      }
+      .img1 {
+        margin-left: 7%;
+        display: inline-block;
+        font-size: 26px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        margin-right: 70%;
+        margin-top: -1px;
+      }
+      .img1:hover {
+        color: rgb(90, 11, 236);
+        text-decoration: underline;
+      }
+      .img2 {
+        margin-left: 38%;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 26px;
+        margin-right: 35%;
+        margin-top: -6%;
+      }
+      .img2:hover {
+        color: rgb(90, 11, 236);
+        text-decoration: underline;
+      }
+      .img3 {
+        margin-left: 70%;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 26px;
+        margin-right: 9%;
+        margin-top: -8.8%;
+      }
+      .img3:hover {
+        color: rgb(90, 11, 236);
+        text-decoration: underline;
+      }
+      .div3 {
+        background-color: rgb(207, 197, 197);
+        width: 1350px;
+        height: 470px;
+        margin-top: 7%;
+        margin-left: -10px;
+      }
+      .img4 {
+        width: 520px;
+        height: 400px;
+        margin-top: 2.5%;
+        margin-left: 4%;
+      }
+      .img5 {
+        margin-left: 65%;
+        font-size: 30px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        margin-top: -30.4%;
+        text-decoration: underline;
+      }
+      .img5:hover {
+        color: blue;
+      }
+      .img6 {
+        margin-left: 50%;
+        font-size: 25px;
+        margin-right: 10%;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      .img7 {
+        width: 120px;
+        height: 45px;
+        font-size: 16px;
+        color: white;
+        background-color: orangered;
+        margin-left: 50%;
+      }
+      .img7:hover {
+        color: white;
+        background-color: coral;
+      }
+      .img11 {
+        margin-left: 0.7%;
+      }
+      .img12 {
+        margin-left: 3%;
+        font-size: 28px;
+        margin-top: 3%;
+        text-decoration: underline red;
+      }
+      .img10 {
+        margin-top: -3%;
+      }
+      .img13 {
+        margin-left: 1%;
+        font-weight: bolder;
+        font-size: 22px;
+        margin-top: 10px;
+      }
+      .img13:hover {
+        text-decoration: underline red;
+      }
+      .img14 {
+        font-size: 22px;
+        font-weight: bolder;
+        margin-top: -8.5%;
+        margin-left: 25.7%;
+      }
+      .img14:hover {
+        text-decoration: underline red;
+      }
+      .img6:hover {
+        text-decoration: underline red;
+        cursor: pointer;
+      }
+      .img15 {
+        font-size: 22px;
+        font-weight: bolder;
+        margin-top: -10%;
+        margin-left: 50%;
+      }
+      .img15:hover {
+        text-decoration: underline red;
+      }
+      .img16 {
+        font-size: 22px;
+        margin-top: -11%;
+        margin-left: 75%;
+        font-weight: bolder;
+      }
+      .img16:hover {
+        text-decoration: underline red;
+      }
+      .pg4 {
+        margin-left: 75%;
+        margin-top: -1%;
+        margin-right: 3%;
+        font-weight: bolder;
+      }
+      .pg3 {
+        margin-left: 50%;
+        margin-top: -1.7%;
+        font-weight: bolder;
+      }
+      .pg2 {
+        margin-left: 25.6%;
+        margin-top: -1%;
+        font-weight: bolder;
+      }
+      .pg1 {
+        margin-left: 10px;
+        margin-top: -1%;
+        font-weight: bolder;
+      }
+      .watch {
+        color: chartreuse;
+      }
+      .line {
+        height: 440px;
+        width: 200px;
+        border-left: 6px solid;
+        color: orangered;
+        position: absolute;
+        margin-left: 15%;
+        margin-top: -50%;
+      }
+      .button1 {
+        background-color: orangered;
+        color: white;
+        position: absolute;
+        width: 220px;
+        height: 50px;
+        font-size: 19px;
+        margin-left: 70%;
+        margin-top: -7%;
+      }
+      .cv {
+        position: absolute;
+        margin-left: 18%;
+        margin-top: -50%;
+        font-size: 36px;
+        color: orangered;
+        font-weight: bolder;
+        text-transform: capitalize;
+      }
+      video {
+        margin-top: -26.7%;
+        opacity: 0.4;
+      }
+      .finish {
+        margin-left: 18.5%;
+        position: absolute;
+        margin-top: -43%;
+        font-size: 36px;
+        color: orangered;
+        font-weight: bolder;
+        text-transform: capitalize;
+      }
+      .finished{
+        font-size: 36px;
+        color: orangered;
+        font-weight: bolder;
+        text-transform: capitalize;        
+        position: absolute;
+        margin-top: -36%;
+        margin-right: 8%;
+        margin-left: 18.5%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <ul class="ankit">
+        <li>M</li>
+        <li>A</li>
+        <li>D</li>
+        <li>A</li>
+        <li>N</li>
+        <li>T</li>
+        <li>I</li>
+        <li>C</li>
+        <li>.</li>
+        <li>&nbsp;</li>
+        <li>T</li>
+        <li>E</li>
+        <li>C</li>
+        <li>H</li>
+        <li>.</li>
+        <li>&nbsp;</li>
+        <li>P</li>
+        <li>V</li>
+        <li>T</li>
+        <li>.</li>
+        <li>&nbsp;</li>
+        <li>L</li>
+        <li>T</li>
+        <li>D</li>
+        <li>.</li>
+      </ul>
+    </div>
+    <nav>
+      <ul class="ten">
+        <li>
+          <a href="./MADANTIC.html"><span class="watch">MADANTIC</span></a>
+        </li>
+        <li><a href="./HOME.html">Home</a></li>
+        <li><a href="./CAREER.html">Services</a></li>
+        <li><a href="./SERVICES.html">Careers</a></li>
+        <li><a href="./WHY.html">Why we Here</a></li>
+        <li><a href="./TEXT SLIDER.html">About</a></li>
+        <li><a href="./CONTACT.html">Contact</a></li>
+        <li><i id="tap1" class="fa-solid fa-magnifying-glass"></i></li>
+        <li><i id="tap2" class="fa-sharp fa-solid fa-globe"></i></li>
+        <li><i id="tap3" class="fa-solid fa-phone"></i></li>
+        <li><i id="tap4" class="fa-regular fa-user"></i></li>
+      </ul>
+    </nav>
+    <!-- <iframe
+    src="https://player.vimeo.com/video/879844854?autoplay=1&amp;loop=1&amp;autopause=0&amp;background=1"
+    frameborder="0"
+    allow="fullscreen"
+    allow="autoplay"
+    title="Vimeo video"
+    width="1390px" height="1288px" style="margin-top: -32%; margin-left: -2%;"></iframe> -->
+    <video
+      controls
+      width="1350px"
+      style="margin-left: -10px"
+      autoplay
+      loop
+      muted
+    >
+      <source src="./VIDEO/HEADING.mp4" type="video/mp4" />
+      <source src="./VIDEO/HEADING.mp4" type="video/ogg" />
+    </video>
+    <div class="line"></div>
+    <button class="button">
+      Read More <i class="fa-solid fa-right-long"></i>
+    </button>
+    <button class="button1">
+      Book a Consultation <i class="fa-solid fa-right-long"></i>
+    </button>
+    <div>
+      <p class="cv">global business consulting for a dynamic world</p>
+      <p class="finish">WE SOLVE THE MOST CRITICAL CHALLENGES</p>
+      <p class="finished">
+        Each of our projects is different, but they have one thing in common: A
+        need for decisive, informed, and often urgent action
+      </p>
+      <img
+        class="img"
+        src="https://www.pwc.com/gx/en/strategy-and-business/assets/Hero-Image_Early-Days-Generative-AI-thumbnail.jpg"
+        alt=""
+      />
+      <img
+        class="img"
+        src="https://www.pwc.com/gx/en/issues/esg/sustainable-by-design-thumbnail.jpg"
+        alt=""
+      />
+      <img
+        class="img"
+        src="https://www.pwc.com/gx/en/assets/gis23-thumbnail.jpeg"
+        alt=""
+      />
+    </div>
+    <div>
+      <p class="img1">Do you have an “early days” generative AI strategy?</p>
+      <p class="img2">
+        Sustainable by design: blueprint for sourcing green building materials
+      </p>
+      <p class="img3">Madantic Global Consulting Survey 2024</p>
+    </div>
+    <div class="div3">
+      <img
+        class="img4"
+        src="https://www.pwc.com/gx/en/ceo-survey/davos/2023/davos-2023-hero-950079458.jpeg"
+        alt=""
+      />
+      <p class="img5">Our Growth</p>
+      <p class="img6">
+        Markets experiencing high growth are ones where the total market share
+        available is expanding & there is plenty of opportunity for
+        everyone to make money
+      </p>
+      <button class="img7">
+        Read More <i class="fa-solid fa-right-long"></i>
+      </button>
+    </div>
+    <div class="img10">
+      <p class="img12">Case Studies</p>
+      <img
+        class="img11"
+        src="https://www.pwc.com/content/dam/pwc/au/en/consulting/technology/gettyimages-896157870.jpg/jcr:content/renditions/cq5dam.thumbnail.319.319.png"
+        alt="ANKIT KUMAR"
+        style="margin-top: 1%; width: 300px"
+      />
+      <img
+        class="img11"
+        src="https://www.pwc.com/content/dam/pwc/uk/en/the-new-equation/images/managed-services_cs_business-bank_page-cover.jpg/jcr:content/renditions/cq5dam.thumbnail.319.319.png"
+        alt="ANKIT KUMAR"
+      />
+      <img
+        class="img11"
+        src="https://www.pwc.com/content/dam/pwc/uk/en/assets/images/longform/brand-pictures/gettyimages-1084168850_image.jpg/jcr:content/renditions/cq5dam.thumbnail.319.319.png"
+        alt="ANKIT KUMAR"
+      />
+      <img
+        class="img11"
+        src="https://www.pwc.com/content/dam/pwc/ca/en/power-utilities/assets/p1753394-eumi-cp-and-fc-case-study-hero-655x386-1.jpg/jcr:content/renditions/cq5dam.thumbnail.319.319.png"
+        alt="ANKIT KUMAR"
+      />
+    </div>
+    <p class="img13">Buisness Strategy & Advisory</p>
+    <p class="pg1">
+      Strategy& has analyzed how financial <br />
+      strategy executives perceive and shape <br />
+      their role
+    </p>
+    <p class="img14">
+      Product Development And <br />
+      Quality Management
+    </p>
+    <p class="pg2">
+      Assisting in the development and <br />
+      execution of strategic plans to achieve <br />
+      long-term objectives.
+    </p>
+    <p class="img15">
+      IT and Buisness Analysis <br />
+      consulting.
+    </p>
+    <p class="pg3">
+      Helping organizations navigate and <br />
+      implement changes smoothly, ensuring <br />
+      minimal disruption and maximizing <br />
+      employee adoption.
+    </p>
+    <p class="img16">Change Management Consulting.</p>
+    <p class="pg4">
+      Providing insights into market trends, customer behavior, and competitive
+      landscapes to inform business strategies.
+    </p>
+    <div class="team10">
+      <h1 class="copy">&copy;</h1>
+      <h3 class="copy1">Madantic</h3>
+      <h3 class="copy2">Discliamer</h3>
+      <h3 class="copy3">Privacy</h3>
+      <i class="fa-brands fa-facebook" id="copy4"></i>
+      <i class="fa-brands fa-linkedin" id="copy5"></i>
+      <i class="fa-brands fa-youtube" id="copy6"></i>
+    </div>
+  </body>
+</html>
